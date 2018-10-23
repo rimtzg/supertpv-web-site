@@ -1,0 +1,5 @@
+dev_appserver.py app.yaml --admin_port 8000 --port 8001 --storage_path ~/.client/
+
+pip install -t lib -r requirements.txt
+
+gcloud app deploy --project=tpv-web-site --version master --verbosity=info
